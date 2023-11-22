@@ -33,3 +33,10 @@ clearout.addEventListener("click", function(){
             list.removeChild(list.firstChild);
         }
 });
+
+// When clicked can delete any of the list items
+list.addEventListener('click', function(event) {
+    if (event.target.tagName === 'LI') {
+      event.target.remove();
+    }
+  });
